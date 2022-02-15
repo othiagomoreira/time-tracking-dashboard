@@ -1,0 +1,53 @@
+@use '../util' as *;
+
+.card {
+    background-color: var(--color-bg-work);
+    border-radius: rem(16);
+
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -1rem;
+
+    &__content {
+        background-color: var(--color-bg-card);
+        margin-top: rem(36);
+
+        border-radius: rem(16);
+        padding: rem(28);
+        cursor: pointer;
+        transition: all ease 0.5s;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__assignment,
+    &__date {
+        @include flex(space-between);
+    }
+
+    &__assignment {
+        margin-bottom: rem(8);
+    }
+
+    &__subtitle,
+    &__hours {
+        color: #fff;
+    }
+
+    &__subtitle {
+        font-size: rem(16);
+        font-weight: 500;
+    }
+
+    &__hours {
+        font-size: rem(32);
+        font-weight: 300;
+    }
+
+    &__description {
+        font-size: 0.95rem;
+        color: var(--color-report);
+    }
+}

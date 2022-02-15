@@ -1,4 +1,15 @@
 :root {
-	--white: hsl(0, 0%, 100%);
-	--black: hsl(0, 0%, 0%);
+    --color-bg-body: hsl(226, 43%, 10%);
+    --color-bg-card: hsl(235, 46%, 20%);
+    --color-report: hsl(236, 100%, 87%);
+    --color-contrast: hsl(235, 45%, 61%);
+
+    // cards
+    --color-bg-report: hsl(246, 80%, 60%);
+    --color-bg-work: hsl(15, 100%, 70%);
+    --color-bg-play: hsl(195, 74%, 62%);
+    --color-bg-study: hsl(348, 100%, 68%);
+    --color-bg-exercise: hsl(145, 58%, 55%);
+    --color-bg-social: hsl(264, 64%, 52%);
+    --color-bg-self-care: hsl(43, 84%, 65%);
 }

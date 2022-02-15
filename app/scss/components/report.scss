@@ -1,0 +1,56 @@
+@use '../util' as *;
+
+.report {
+    background-color: var(--color-bg-card);
+    border-radius: rem(16);
+    overflow: hidden;
+    margin-bottom: rem(24);
+
+    &__user {
+        background-color: var(--color-bg-report);
+        border-radius: rem(16);
+        padding: rem(32);
+
+        @include flex(initial);
+        gap: rem(16);
+    }
+
+    &__image {
+        width: rem(70);
+        height: rem(70);
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: rem(24);
+
+        & span {
+            display: block;
+            color: var(--color-report);
+            font-size: rem(16);
+            line-height: 1.5;
+        }
+    }
+
+    &__list {
+        padding: rem(24) rem(32);
+        @include flex(space-between);
+    }
+
+    &__btn {
+        border: none;
+        background: transparent;
+        color: var(--color-contrast);
+        font-weight: 500;
+        font-size: rem(18);
+        cursor: pointer;
+        transition: all ease 0.5s;
+
+        &:hover,
+        &--active {
+            color: #fff;
+        }
+    }
+}
