@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<!-- Css Stylesheet -->
+	<link rel="stylesheet" href="./dist/style.css" />
+
+	<!-- JavaScript -->
+	<script defer src="./app/js/script.js"></script>
+
+	<title>Time tracking dashboard | Frontend Mentor</title>
+</head>
+
+<body>
+	<main class="container">
+		<div class="report">
+			<div class="report__user">
+				<img class="report__image" src="images/image-jeremy.png" alt="Jeremy Robson profile picture">
+
+				<p class="report__text">
+					<span>Report for</span>Jeremy Robson
+				</p>
+			</div>
+
+			<ul class="report__list">
+				<li class="report__item">
+					<button class="report__btn">Daily</button>
+				</li>
+
+				<li class="report__item">
+					<button class="report__btn">Weekly</button>
+				</li>
+
+				<li class="report__item">
+					<button class="report__btn">Monthly</button>
+				</li>
+			</ul>
+		</div>
+
+		<section class="cards">
+			<article class="card">
+				<div class="card__content">
+					<div class="card__assignment">
+						<h2 class="card__subtitle">Work</h2>
+						<img class="card__icon" src="images/icon-ellipsis.svg" alt="settings icon">
+					</div>
+
+					<div class="card__date">
+						<time class="card__hours">32hrs</time>
+						<span class="card__description">Last Week - 36hrs</span>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+</body>
+
+</html>
