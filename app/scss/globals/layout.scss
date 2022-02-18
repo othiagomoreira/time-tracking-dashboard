@@ -3,10 +3,24 @@
 .container {
     width: 88vw;
     max-width: rem(1100);
+
+    @include breakpoint(large) {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: rem(28);
+    }
 }
 
 .cards {
+    grid-column: 2 / 3;
     display: grid;
-    gap: rem(16);
-    grid-template-columns: 100%;
+    gap: rem(28);
+
+    @include breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(large) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

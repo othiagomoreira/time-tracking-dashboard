@@ -1,16 +1,44 @@
 @use '../util' as *;
 
 .card {
-    background-color: var(--color-bg-work);
-    border-radius: rem(16);
-
-    background-image: url(/images/icon-work.svg);
+    border-radius: rem(16) rem(16) rem(20) rem(20);
     background-repeat: no-repeat;
     background-position: 92% -1rem;
+    transition: all ease 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:nth-child(1) {
+        background-color: var(--color-bg-work);
+        background-image: url(/images/icon-work.svg);
+    }
+    &:nth-child(2) {
+        background-color: var(--color-bg-play);
+        background-image: url(/images/icon-play.svg);
+    }
+    &:nth-child(3) {
+        background-color: var(--color-bg-study);
+        background-image: url(/images/icon-study.svg);
+    }
+    &:nth-child(4) {
+        background-color: var(--color-bg-exercise);
+        background-image: url(/images/icon-exercise.svg);
+        background-position: 92% -0.1rem;
+    }
+    &:nth-child(5) {
+        background-color: var(--color-bg-social);
+        background-image: url(/images/icon-social.svg);
+    }
+    &:nth-child(6) {
+        background-color: var(--color-bg-self-care);
+        background-image: url(/images/icon-self-care.svg);
+    }
 
     &__content {
         background-color: var(--color-bg-card);
-        margin-top: rem(36);
+        margin-top: rem(40);
 
         border-radius: rem(16);
         padding: rem(28);
@@ -18,7 +46,7 @@
         transition: all ease 0.5s;
 
         &:hover {
-            opacity: 0.9;
+            background-color: #33387a;
         }
     }
 
@@ -27,16 +55,24 @@
         @include flex(space-between);
     }
 
-    &__assignment {
-        margin-bottom: rem(8);
+    &__date {
+        margin-top: rem(8);
+
+        @include breakpoint(medium) {
+            flex-direction: column;
+            align-items: initial;
+            gap: rem(16);
+            margin-top: rem(32);
+        }
     }
 
-    &__subtitle,
+    &__title,
     &__hours {
         color: #fff;
+        letter-spacing: 1px;
     }
 
-    &__subtitle {
+    &__title {
         font-size: rem(16);
         font-weight: 500;
     }
@@ -44,6 +80,10 @@
     &__hours {
         font-size: rem(32);
         font-weight: 300;
+
+        @include breakpoint(medium) {
+            font-size: rem(50);
+        }
     }
 
     &__description {

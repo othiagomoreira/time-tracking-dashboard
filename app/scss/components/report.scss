@@ -1,10 +1,15 @@
 @use '../util' as *;
 
 .report {
+    grid-column: 1 / 2;
     background-color: var(--color-bg-card);
     border-radius: rem(16);
     overflow: hidden;
     margin-bottom: rem(24);
+
+    @include breakpoint(large) {
+        margin-bottom: 0;
+    }
 
     &__user {
         background-color: var(--color-bg-report);
@@ -13,6 +18,13 @@
 
         @include flex(initial);
         gap: rem(16);
+
+        @include breakpoint(large) {
+            flex-direction: column;
+            align-items: initial;
+            gap: rem(40);
+            padding: rem(32) rem(32) rem(80);
+        }
     }
 
     &__image {
@@ -20,11 +32,20 @@
         height: rem(70);
         border-radius: 50%;
         border: 3px solid #fff;
+
+        @include breakpoint(medium) {
+            height: rem(80);
+            width: rem(80);
+        }
     }
 
     &__text {
         color: #fff;
         font-size: rem(24);
+
+        @include breakpoint(medium) {
+            font-size: rem(40);
+        }
 
         & span {
             display: block;
@@ -35,8 +56,14 @@
     }
 
     &__list {
-        padding: rem(24) rem(32);
         @include flex(space-between);
+        padding: rem(24) rem(32);
+
+        @include breakpoint(large) {
+            flex-direction: column;
+            align-items: initial;
+            gap: rem(24);
+        }
     }
 
     &__btn {
