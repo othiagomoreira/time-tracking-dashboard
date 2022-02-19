@@ -1,13 +1,15 @@
 @use '../util' as *;
 
 .container {
-    width: 88vw;
+    width: 90vw;
     max-width: rem(1100);
 
     @include breakpoint(large) {
         display: grid;
         grid-template-columns: 260px 1fr;
         gap: rem(28);
+
+        width: 92vw;
     }
 }
 

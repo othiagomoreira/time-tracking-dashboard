@@ -1,39 +1,13 @@
 @use '../util' as *;
 
 .card {
-    border-radius: rem(16) rem(16) rem(20) rem(20);
+    border-radius: rem(16);
     background-repeat: no-repeat;
     background-position: 92% -1rem;
     transition: all ease 0.5s;
 
     &:hover {
         transform: scale(1.05);
-    }
-
-    &:nth-child(1) {
-        background-color: var(--color-bg-work);
-        background-image: url(/images/icon-work.svg);
-    }
-    &:nth-child(2) {
-        background-color: var(--color-bg-play);
-        background-image: url(/images/icon-play.svg);
-    }
-    &:nth-child(3) {
-        background-color: var(--color-bg-study);
-        background-image: url(/images/icon-study.svg);
-    }
-    &:nth-child(4) {
-        background-color: var(--color-bg-exercise);
-        background-image: url(/images/icon-exercise.svg);
-        background-position: 92% -0.1rem;
-    }
-    &:nth-child(5) {
-        background-color: var(--color-bg-social);
-        background-image: url(/images/icon-social.svg);
-    }
-    &:nth-child(6) {
-        background-color: var(--color-bg-self-care);
-        background-image: url(/images/icon-self-care.svg);
     }
 
     &__content {

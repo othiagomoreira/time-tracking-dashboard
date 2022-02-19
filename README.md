@@ -12,12 +12,12 @@
     <img alt="made by Thiago Moreira" src="https://img.shields.io/badge/made%20by-othiagomoreira-%237319C1">
   </a>
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/othiagomoreira/social-proof-section?color=%2300FFFF">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/othiagomoreira/time-tracking-dashboard?color=%2300FFFF">
 
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/othiagomoreira/social-proof-section?style=plastic">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/othiagomoreira/time-tracking-dashboard?style=plastic">
 
-  <a href="https://github.com/othiagomoreira/README/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/othiagomoreira/social-proof-section">
+  <a href="https://github.com/othiagomoreira/time-tracking-dashboard/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/othiagomoreira/time-tracking-dashboard">
   </a>
     
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
@@ -38,7 +38,9 @@
 
 ## 📃 About
 
--   ...
+-   This was an amazing project to do, I improved my skills with javascript, using asynchronous functions and making HTTP requests with the fetch() method.
+
+-   I also found this amazing **[blog](encr.pw/gPnwz)** by Gabriel Tessarini that explains how to access the properties of an object through square bracket notations and what are the advantages of this method.
 
 ---
 
@@ -47,17 +49,17 @@
 ### 📱 Mobile
 
 <p align="center">
-  <img alt="" title="#" src="" width="200px">
+  <img alt="Screenshot mobile" title="#time-tracking-dashboard" src="assets/mobile.png" width="200px">
 
-  <img alt="" title="#" src="" width="200px">
+  <img alt="Screenshot mobile active" title="#time-tracking-dashboard" src="assets/mobile-active.png" width="200px">
 </p>
 
 ### 💻 Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="" title="#" src="" width="400px">
+  <img alt="Screenshot desktop" title="#time-tracking-dashboard" src="assets/desktop.png" width="400px">
 
-  <img alt="" title="#" src="" width="400px">
+  <img alt="Screenshot desktop active" title="#time-tracking-dashboard" src="assets/desktop-active.png" width="400px">
 </p>
 
 ---
@@ -66,8 +68,10 @@
 
 The following tools were used in the construction of the project:
 
--   Icons:  **[Feather Icons](https://feathericons.com/)**
--   Fonts:  **[Ubuntu](https://fonts.google.com/specimen/Ubuntu)**,  **[Roboto](https://fonts.google.com/specimen/Roboto)**
+-   Sass / Scss
+-   JavaScript
+-   Animation:  **[Animate.css](https://animate.style/)**
+-   Font Family:  **[Rubik](https://fonts.google.com/specimen/Rubik)**
 ---
 
 ## 😎 Author

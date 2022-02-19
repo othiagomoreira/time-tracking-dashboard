@@ -25,7 +25,7 @@ const calcTimefame = (option) => {
 async function createCards(clickedButton) {
     clearScreenCards();
 
-    const res = await fetch('./data.json');
+    const res = await fetch('./assets/data.json');
     const data = await res.json();
 
     data.forEach((activity) => {
