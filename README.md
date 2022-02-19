@@ -1,5 +1,5 @@
 <h1 align="center">
-  ❤  <a href="#">Time tracking dashboard</a>
+  🌠  <a href="#">Time tracking dashboard</a>
 </h1>
 
 <h3 align="center"> 
@@ -40,7 +40,7 @@
 
 -   This was an amazing project to do, I improved my skills with javascript, using asynchronous functions and making HTTP requests with the fetch() method.
 
--   I also found this amazing **[blog](encr.pw/gPnwz)** by Gabriel Tessarini that explains how to access the properties of an object through square bracket notations and what are the advantages of this method.
+-   I also found this amazing **[blog](https://imasters.com.br/desenvolvimento/o-poder-dos-colchetes-no-javascript)** by Gabriel Tessarini that explains how to access the properties of an object through square bracket notations and what are the advantages of this method.
 
 ---
 
