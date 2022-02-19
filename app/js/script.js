@@ -44,7 +44,7 @@ async function createCards(clickedButton) {
 					</div>
 
 					<div class="card__date">
-						<time class="card__hours">${timefameData.current}hrs</time>
+						<div class="card__hours">${timefameData.current}hrs</div>
 						<div class="card__description">${previousTimefame} - ${timefameData.previous}hrs</div>
 					</div>
 				</div>`;
